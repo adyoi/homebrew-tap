@@ -1,21 +1,21 @@
 class TesseractCrypt < Formula
   desc "Hybrid public-key string & file encryption (sign-then-encrypt)"
   homepage "https://github.com/adyoi/tesseract-crypt"
-  version "1.0.2"
+  version "1.0.3"
   license "MIT"
 
   on_macos do
     url "https://github.com/adyoi/tesseract-crypt/releases/download/v#{version}/tesseract-crypt-#{version}-macOS-universal2.tar.gz"
-    sha256 "c36d2d94684391ab6220b82151833c68ce411f63baa427ce3a2477ab929d27d5"
+    sha256 "58ebc3e025a845137e3173a6d9d41e0abe6c337ec71e30d3153354d800f7e86c"
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/adyoi/tesseract-crypt/releases/download/v#{version}/tesseract-crypt-#{version}-Linux-aarch64.tar.gz"
-      sha256 "ec4b165b369308a3014ae27e6a433bbddd1e959e0e30dfdeb009ce851fc525d4"
+      sha256 "635b7157e0567689f8999f0ec3f82baad00266aca3a0479e7a7c33a0f6f53b4f"
     else
       url "https://github.com/adyoi/tesseract-crypt/releases/download/v#{version}/tesseract-crypt-#{version}-Linux-x86_64.tar.gz"
-      sha256 "c8ce02f2d6622406b206ee7d4ed4d331023ede6e6985d21143e86c9de4925edb"
+      sha256 "9d131041ef77eed9692b288f80d144c881cd657b74d9f29a36e32e7707bf49c9"
     end
   end
 
